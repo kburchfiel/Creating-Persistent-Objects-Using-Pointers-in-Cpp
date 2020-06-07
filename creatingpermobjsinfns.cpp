@@ -49,10 +49,10 @@ int main()
     createpersistentobjects(airplaneobjptrs);
 
     //We have not only created 10 new Airplane objects through our createpersistentobjects function, but can also access them individually. Even though the objects weren't given specific names (e.g. Airplane a1, Airplane a2), they each have a specific pointer assigned to them, which can be dereferenced to display the object.
-    cout << "Airplane objects that can be accessed through the airplaneobjptrs vector:\n";
+    cout << "Airplane objects that were accessed through a vector of pointers:\n";
     for (int i = 0; i < 10; i++)
     {
-        cout << "Pointer location: " << airplaneobjptrs[i] << " Model number: " << (*airplaneobjptrs[i]).modelnum << " manufacturer: " << (*airplaneobjptrs[i]).manufacturer << "\n"; //This cout statement displays the values assigned to the airplane object connected to the deferenced pointer. The parentheses are necessary for the program to compile (as I learned from https://www.usna.edu/Users/cs/choi/ic210/lec/l40/lec.html)
+        cout << "Pointer location: " << airplaneobjptrs[i] << " Model number: " << (*airplaneobjptrs[i]).modelnum << " Manufacturer: " << (*airplaneobjptrs[i]).manufacturer << "\n"; //This cout statement displays the values assigned to the airplane object connected to the deferenced pointer. The parentheses are necessary for the program to compile (as I learned from https://www.usna.edu/Users/cs/choi/ic210/lec/l40/lec.html)
     }
 
     //It's also possible to modify values of members of objects using our vector of pointers. For instance:
