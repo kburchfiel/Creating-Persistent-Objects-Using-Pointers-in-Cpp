@@ -79,27 +79,27 @@ cin >> c;
 }
 
 /* Text produced by this code on the console: (Pointer location values will vary across users/instances of the program, but the two lists of pointers below should match each time the program is run)
-Airplane objects that can be accessed through the airplaneobjptrs vector:
-Pointer location: 0x7919c0 Model number: 707 manufacturer: Boeing
-Pointer location: 0x793ec0 Model number: 717 manufacturer: Boeing
-Pointer location: 0x793f60 Model number: 727 manufacturer: Boeing
-Pointer location: 0x794010 Model number: 737 manufacturer: Boeing
-Pointer location: 0x794070 Model number: 747 manufacturer: Boeing
-Pointer location: 0x794140 Model number: 757 manufacturer: Boeing
-Pointer location: 0x7941a0 Model number: 767 manufacturer: Boeing
-Pointer location: 0x794200 Model number: 777 manufacturer: Boeing
-Pointer location: 0x794260 Model number: 787 manufacturer: Boeing
-Pointer location: 0x7940d0 Model number: 797 manufacturer: Boeing
+Airplane objects that were accessed through a vector of pointers:
+Pointer location: 0x1d1af0 Model number: 707 Manufacturer: Boeing
+Pointer location: 0x1d1f20 Model number: 717 Manufacturer: Boeing
+Pointer location: 0x1d1fc0 Model number: 727 Manufacturer: Boeing
+Pointer location: 0x2532500 Model number: 737 Manufacturer: Boeing
+Pointer location: 0x2532560 Model number: 747 Manufacturer: Boeing
+Pointer location: 0x2532630 Model number: 757 Manufacturer: Boeing
+Pointer location: 0x2532690 Model number: 767 Manufacturer: Boeing
+Pointer location: 0x25326f0 Model number: 777 Manufacturer: Boeing
+Pointer location: 0x2532750 Model number: 787 Manufacturer: Boeing
+Pointer location: 0x25325c0 Model number: 797 Manufacturer: Boeing
 Switching model numbers to Airbus:
-Pointer location: 0x7919c0 New model number: 300 New manufacturer: Airbus
-Pointer location: 0x793ec0 New model number: 310 New manufacturer: Airbus
-Pointer location: 0x793f60 New model number: 320 New manufacturer: Airbus
-Pointer location: 0x794010 New model number: 330 New manufacturer: Airbus
-Pointer location: 0x794070 New model number: 340 New manufacturer: Airbus
-Pointer location: 0x794140 New model number: 350 New manufacturer: Airbus
-Pointer location: 0x7941a0 New model number: 360 New manufacturer: Airbus
-Pointer location: 0x794200 New model number: 370 New manufacturer: Airbus
-Pointer location: 0x794260 New model number: 380 New manufacturer: Airbus
-Pointer location: 0x7940d0 New model number: 390 New manufacturer: Airbus
+Pointer location: 0x1d1af0 New model number: 300 New manufacturer: Airbus
+Pointer location: 0x1d1f20 New model number: 310 New manufacturer: Airbus
+Pointer location: 0x1d1fc0 New model number: 320 New manufacturer: Airbus
+Pointer location: 0x2532500 New model number: 330 New manufacturer: Airbus
+Pointer location: 0x2532560 New model number: 340 New manufacturer: Airbus
+Pointer location: 0x2532630 New model number: 350 New manufacturer: Airbus
+Pointer location: 0x2532690 New model number: 360 New manufacturer: Airbus
+Pointer location: 0x25326f0 New model number: 370 New manufacturer: Airbus
+Pointer location: 0x2532750 New model number: 380 New manufacturer: Airbus
+Pointer location: 0x25325c0 New model number: 390 New manufacturer: Airbus
 
 */
