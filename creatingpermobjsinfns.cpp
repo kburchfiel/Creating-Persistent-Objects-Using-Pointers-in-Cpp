@@ -71,6 +71,11 @@ int main()
     {
         cout << "Pointer location: " << airplaneobjptrs[i] << " New model number: " << (*airplaneobjptrs[i]).modelnum << " New manufacturer: " << (*airplaneobjptrs[i]).manufacturer << "\n"; //This cout statement displays the values assigned to the airplane object connected to the deferenced pointer. The parentheses are necessary for the program to compile (as I learned from https://www.usna.edu/Users/cs/choi/ic210/lec/l40/lec.html)
     }
+
+//The following two lines of code will keep the external console window open.
+char c; 
+cin >> c;
+
 }
 
 /* Text produced by this code on the console: (Pointer location values will vary across users/instances of the program, but the two lists of pointers below should match each time the program is run)
