@@ -78,7 +78,7 @@ for (int i = 0; i < airplaneobjptrs.size(); i++)
     };
 
 
-    //The following two lines of code will keep the external console window open.
+    //The following two lines will keep the external console window open.
     char c;
     cin >> c;
 }
