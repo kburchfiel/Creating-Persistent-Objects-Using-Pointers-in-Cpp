@@ -1,9 +1,8 @@
 //AMDG
 //This simple program shows how pointers can be used to create objects of a class in a function that (A) persist after the function concludes, and (B) can be referenced and modified individually within the program even though they don't have specific names.
-//I have no doubt that these concepts are elementary to the majority of C++ programmers, but perhaps this example can be beneficial to individuals like me who are new to the programming langauge. 
+//I have no doubt that these concepts are elementary to the majority of C++ programmers, but perhaps this example can be beneficial to individuals like me who are new to the programming langauge.
 //The following lecture notes let me determine how to reference objects directly through my pointer of vectors: https://www.usna.edu/Users/cs/choi/ic210/lec/l40/lec.html
 //Kenneth Burchfiel, 6/6/2020
-
 
 #include <iostream>
 #include <vector>
@@ -29,7 +28,7 @@ void createpersistentobjects(vector<Airplane *> &v) //This function lets us crea
     for (int x = 0; x < 10; x++)
     {
         Airplane *aptr = new Airplane(z, "Boeing"); //For each cycle of the for loop, we create a new pointer (aptr) that points to an Airplane object created in the free store.
-        v.push_back(aptr);   //This pointer is now added to the Airplane pointers vector that we reference in our argument.
+        v.push_back(aptr);                          //This pointer is now added to the Airplane pointers vector that we reference in our argument.
         z += 10;
     }
 }
@@ -72,10 +71,16 @@ int main()
         cout << "Pointer location: " << airplaneobjptrs[i] << " New model number: " << (*airplaneobjptrs[i]).modelnum << " New manufacturer: " << (*airplaneobjptrs[i]).manufacturer << "\n"; //This cout statement displays the values assigned to the airplane object connected to the deferenced pointer. The parentheses are necessary for the program to compile (as I learned from https://www.usna.edu/Users/cs/choi/ic210/lec/l40/lec.html)
     }
 
-//The following two lines of code will keep the external console window open.
-char c; 
-cin >> c;
 
+for (int i = 0; i < airplaneobjptrs.size(); i++)
+    {
+        delete airplaneobjptrs[i]; //Freeing up memory by deleting each pointer stored in the vector of pointers
+    };
+
+
+    //The following two lines of code will keep the external console window open.
+    char c;
+    cin >> c;
 }
 
 /* Text produced by this code on the console: (Pointer location values will vary across users/instances of the program, but the two lists of pointers below should match each time the program is run)
